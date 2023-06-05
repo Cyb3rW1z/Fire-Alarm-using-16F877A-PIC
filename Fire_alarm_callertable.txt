@@ -1,0 +1,27 @@
+main
+	__CC2DW
+		____DoICP
+	UART_Init
+		Div_32x32_U
+	LCD_Initialize
+		LCD_command
+			MSdelay
+	ADC_init
+	LCD_String_xy
+		LCD_command
+			MSdelay
+		LCD_String
+			LCD_Char
+				MSdelay
+	MSdelay
+	LCD_Clear
+		LCD_command
+			MSdelay
+		MSdelay
+	read_temp
+		Mul_16X16_U
+		Div_16X16_U
+	WordToStr
+		Div_16X16_U
+	UART_RxChar
+interrupt
